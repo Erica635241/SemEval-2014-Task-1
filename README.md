@@ -85,4 +85,11 @@ self.mse_loss(pred_numeric, true_numeric).
 self.ce_loss(pred_category, true_category).
 ```
 
+- Both losses are combined into a total loss using:
+```python
+total_loss = alpha * loss_numeric + (1 - alpha) * loss_category
+```
+
+The parameter alpha controls the weight of each loss, allowing you to balance the focus between regression and classification tasks. For instance, alpha = 0.5 gives equal weight to both losses. This enables the model to learn from both numeric and categorical outputs effectively.
+
 
