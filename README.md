@@ -50,6 +50,11 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 ## Construct Model
 
+My model achiteture: 
+
+<img width="891" alt="image" src="https://github.com/user-attachments/assets/265767d9-df66-4f4b-b8d4-f2e8acbf8832" />
+
+
 (1) Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for the following reasons:
 
 - Case-Insensitivity:  Since SemEval 2014 Task 1 focuses on semantic similarity, case differences are unnecessary, and an uncased model simplifies the vocabulary.
