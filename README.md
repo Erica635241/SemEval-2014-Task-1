@@ -40,8 +40,6 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
     - The majority of ENTAIL cases appear in the 4-5 relatedness range, meaning highly similar sentences often entail each other.
 
-    - Lower relatedness scores (1-2, 2-3) mostly fall into the NEUTRAL category.
-
 2. Contradictions Are More Common in the 3-4 Range:
 
     - Many CONTRADICT cases are in the 3-4 relatedness range, suggesting that moderate similarity often leads to contradictions.
