@@ -33,25 +33,22 @@ Dataset describtion:
 
 ![image](https://github.com/user-attachments/assets/07d226d2-99ab-4874-a3fb-b7a1ef38c0f4)
 
-## Data Preprocessing
+## Data Explore
+This dataset distribution table shows the class breakdown for the SICK (Sentences Involving Compositional Knowledge) dataset, which is used for semantic relatedness and textual entailment tasks. It consists of a training set (4,934 samples) and a test set (4,906 samples).
 
-This pipeline processes the data to use with a BERT-based model. 
+1. Higher Relatedness Correlates with Entailment:
 
-1. Define `SemevalDataset` class
+    - The majority of ENTAIL cases appear in the 4-5 relatedness range, meaning highly similar sentences often entail each other.
 
-    - Loads and processes the SemEval 2014 Task 1 dataset.
+    - Lower relatedness scores (1-2, 2-3) mostly fall into the NEUTRAL category.
 
-    - Maps entailment_judgment to numeric labels and returns cleaned records.
+2. Contradictions Are More Common in the 3-4 Range:
 
-2. Define bert base tokenizer: Uses `BertTokenizer` to convert sentences into BERT-compatible tokens.
+    - Many CONTRADICT cases are in the 3-4 relatedness range, suggesting that moderate similarity often leads to contradictions.
 
-3. Define `collate_fn()` function: Prepares batches by tokenizing sentences and converting data into tensors.
+3. Training vs. Test Set:
 
-    - Handling Variable-Length Sequences: Ensures consistent input length by padding or truncating sentences.
+    - The distribution is similar between training and test sets, ensuring consistency in model evaluation.
 
-    - Converting to Tensors: Converts tokenized text into tensors, which models require for training.
-
-    - Attention Masks and Token Type IDs: Provides extra information like which tokens to attend to and which sentence they belong to.
-
-4. Build own DataLoader : Creates training and validation DataLoaders, shuffling data for training.
+![image](https://github.com/user-attachments/assets/ae0fe04e-6a50-4d50-8139-ea690f47e512)
 
