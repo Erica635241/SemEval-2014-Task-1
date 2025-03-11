@@ -92,4 +92,9 @@ total_loss = alpha * loss_numeric + (1 - alpha) * loss_category
 
 The parameter alpha controls the weight of each loss, allowing you to balance the focus between regression and classification tasks. For instance, alpha = 0.5 gives equal weight to both losses. This enables the model to learn from both numeric and categorical outputs effectively.
 
+## Test
+The output you've provided includes some evaluation metrics commonly used to assess the performance of a machine learning model. Here’s a brief explanation of each metric:
+- Spearman Correlation Coefficient (Spearman): 0.8134
+- Accuracy: 0.8563
+- F1 Score: 0.8525
 
