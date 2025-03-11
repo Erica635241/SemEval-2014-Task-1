@@ -52,8 +52,7 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 My model achiteture: 
 
-<img width="891" alt="image" src="https://github.com/user-attachments/assets/265767d9-df66-4f4b-b8d4-f2e8acbf8832" />
-
+![image](https://github.com/user-attachments/assets/7abebb30-cb60-433a-8899-8d8164d1047a)
 
 (1) Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for the following reasons:
 
