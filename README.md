@@ -24,9 +24,12 @@ Dataset describtion:
 
 - Each data piece: 
     - premise
-        
+
     - hypothesis
         
     - relatedness_score: A numerical score (e.g., from 0 to 5) that indicates the semantic similarity between the premise and the hypothesis.
         
     - entailment_judgement: A categorical label that classifies the relationship between the premise and the hypothesis. (including 3: Contradiction, 2: Entailment, 0: Neutral)
+
+![image](https://github.com/user-attachments/assets/07d226d2-99ab-4874-a3fb-b7a1ef38c0f4)
+
