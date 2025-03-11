@@ -54,7 +54,7 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 ## Construct Model
 
-Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for the following reasons:
+(1) Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for the following reasons:
 
 - Case-Insensitivity:  Since SemEval 2014 Task 1 focuses on semantic similarity, case differences are unnecessary, and an uncased model simplifies the vocabulary.
 
@@ -65,12 +65,24 @@ Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for
 - Generalization: The uncased version reduces vocabulary size and improves performance on tasks not reliant on capitalization.
 
 
-And I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
+(2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
 
 - Shared Knowledge: MTL enables a single model to learn multiple related tasks, capturing common features and improving efficiency, especially with limited data.
 
 - Enhanced Generalization: MTL can reduce overfitting by leveraging more data from other tasks, helping the model generalize better in low-resource situations.
 
 - Model Consistency: MTL maintains overall model consistency and prevents excessive focus on a single task, improving performance across tasks.
+
+(3) Aggregation of the losses from two sub-tasks: 
+
+- Mean Squared Error Loss (MSE Loss): Measures the average squared difference between predicted and true numeric values, useful for regression tasks. It’s computed as 
+```python
+self.mse_loss(pred_numeric, true_numeric).
+```
+
+- Cross-Entropy Loss (CE Loss): Quantifies the difference between predicted probabilities and actual classes, commonly used for classification tasks. It’s calculated with
+```python
+self.ce_loss(pred_category, true_category).
+```
 
 
