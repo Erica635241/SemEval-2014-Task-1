@@ -33,3 +33,25 @@ Dataset describtion:
 
 ![image](https://github.com/user-attachments/assets/07d226d2-99ab-4874-a3fb-b7a1ef38c0f4)
 
+## Data Preprocessing
+
+This pipeline processes the data to use with a BERT-based model. 
+
+1. Define `SemevalDataset` class
+
+    - Loads and processes the SemEval 2014 Task 1 dataset.
+
+    - Maps entailment_judgment to numeric labels and returns cleaned records.
+
+2. Define bert base tokenizer: Uses `BertTokenizer` to convert sentences into BERT-compatible tokens.
+
+3. Define `collate_fn()` function: Prepares batches by tokenizing sentences and converting data into tensors.
+
+    - Handling Variable-Length Sequences: Ensures consistent input length by padding or truncating sentences.
+
+    - Converting to Tensors: Converts tokenized text into tensors, which models require for training.
+
+    - Attention Masks and Token Type IDs: Provides extra information like which tokens to attend to and which sentence they belong to.
+
+4. Build own DataLoader : Creates training and validation DataLoaders, shuffling data for training.
+
