@@ -3,14 +3,14 @@ In this project, I will focus on building a model for multi-output learning usin
 
 This project will provide valuable insights into how machine learning can effectively deal with multi-label classification challenges.
 
-### SemEval 2014 Task 1 dataset
-Task Description: Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment.
-
 This challenge involves two sub-tasks:
 
 - sub-task1: predicting the degree of relatedness between two sentences (eg. **regression**)
 
 - sub-task2: detecting the entailment relation holding between them (eg. **3-class classification**)
+
+### SemEval 2014 Task 1 dataset
+Task Description: Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment.
 
 Dataset describtion: 
 
