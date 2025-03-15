@@ -50,15 +50,6 @@ Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face bec
 
 ![image](https://github.com/user-attachments/assets/7abebb30-cb60-433a-8899-8d8164d1047a)
 
-
-(2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
-
-- Shared Knowledge: MTL enables a single model to learn multiple related tasks, capturing common features and improving efficiency, especially with limited data.
-
-- Enhanced Generalization: MTL can reduce overfitting by leveraging more data from other tasks, helping the model generalize better in low-resource situations.
-
-- Model Consistency: MTL maintains overall model consistency and prevents excessive focus on a single task, improving performance across tasks.
-
 For the loss functions, I use different loss functions for different types of tasks and aggregation of those two losses: 
 
 - Mean Squared Error Loss (MSE Loss): Measures the average squared difference between predicted and true relatedness_score for regression tasks. It’s computed as 
@@ -83,4 +74,15 @@ The output you've provided includes some evaluation metrics commonly used to ass
 - Spearman Correlation Coefficient (Spearman): 0.8134
 - Accuracy: 0.8563
 - F1 Score: 0.8525
+
+### Appendix
+
+(2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
+
+- Shared Knowledge: MTL enables a single model to learn multiple related tasks, capturing common features and improving efficiency, especially with limited data.
+
+- Enhanced Generalization: MTL can reduce overfitting by leveraging more data from other tasks, helping the model generalize better in low-resource situations.
+
+- Model Consistency: MTL maintains overall model consistency and prevents excessive focus on a single task, improving performance across tasks.
+
 
