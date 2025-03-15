@@ -3,7 +3,7 @@ In this project, I will focus on building a model for multi-output learning usin
 
 This project will provide valuable insights into how machine learning can effectively deal with multi-label classification challenges.
 
-## SemEval 2014 Task 1 dataset
+### SemEval 2014 Task 1 dataset
 Task Description: Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment.
 
 This challenge involves two sub-tasks:
@@ -31,7 +31,7 @@ Dataset describtion:
 
 ![image](https://github.com/user-attachments/assets/07d226d2-99ab-4874-a3fb-b7a1ef38c0f4)
 
-## Data Explore
+### Data Explore
 This dataset distribution table shows the class breakdown for the SICK (Sentences Involving Compositional Knowledge) dataset, which is used for semantic relatedness and textual entailment tasks. It consists of a training set (4,934 samples) and a test set (4,906 samples).
 
 1. Higher Relatedness Correlates with Entailment:
@@ -48,7 +48,7 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 ![image](https://github.com/user-attachments/assets/ae0fe04e-6a50-4d50-8139-ea690f47e512)
 
-## Construct Model
+### Construct Model
 
 My model achiteture: 
 
@@ -92,7 +92,7 @@ total_loss = alpha * loss_numeric + (1 - alpha) * loss_category
 
 The parameter alpha controls the weight of each loss, allowing you to balance the focus between regression and classification tasks. For instance, alpha = 0.5 gives equal weight to both losses. This enables the model to learn from both numeric and categorical outputs effectively.
 
-## Test
+### Test
 The output you've provided includes some evaluation metrics commonly used to assess the performance of a machine learning model. Here’s a brief explanation of each metric:
 - Spearman Correlation Coefficient (Spearman): 0.8134
 - Accuracy: 0.8563
