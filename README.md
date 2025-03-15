@@ -25,7 +25,7 @@ Dataset describtion:
 | sentence A                            | sentence B                            | relatedness_score | entailment_judgement|
 | --------------------------------------| ------------------------------------- |-------------------|---------------------|
 | A group of kids is playing in a yard.  | A group of boys in a yard is playing.  |       4.5         |       NEUTRAL       |
-|A man, a woman and two girls are walking on the beach.| A man, a woman and two girls are walking on the beach.|4.3|ENTAILMENT|
+|A man, a woman and two girls are walking on the beach.| A group of people is on a beach.|4.3|ENTAILMENT|
 
 ### Data Explore
 This dataset distribution table shows the class breakdown for the SICK (Sentences Involving Compositional Knowledge) dataset, which is used for semantic relatedness and textual entailment tasks. It consists of a training set (4,934 samples) and a test set (4,906 samples).
