@@ -73,11 +73,11 @@ The parameter alpha controls the weight of each loss, allowing you to balance th
 The output you've provided includes some evaluation metrics commonly used to assess the performance of a machine learning model. Here’s a brief explanation of each metric:
 Evaluations for the two tasks on the basis of Spearman rank correlation for sub-task 1 and accuracy, F1 score for sub-task 2.
 
-evaluation|training set|testing set|
-------------------------------------
-correlation|0.91|0.81|
-accuracy|0.95|0.86|
-F1 score|0.94|0.85|
+|evaluation|training set|testing set|
+|--------- |------------|-----------|
+|correlation|0.91|0.81|
+|accuracy|0.95|0.86|
+|F1 score|0.94|0.85|
 
 ### Appendix
 
