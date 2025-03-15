@@ -42,7 +42,7 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
     - The distribution is similar between training and test sets, ensuring consistency in model evaluation.
 
-![image](https://github.com/user-attachments/assets/ae0fe04e-6a50-4d50-8139-ea690f47e512)
+<img width="935" alt="image" src="https://github.com/user-attachments/assets/d6dc80f9-07fa-4389-948a-e64a4171eff1" />
 
 ### Construct Model
 
