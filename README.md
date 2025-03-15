@@ -44,21 +44,11 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 <img width="935" alt="image" src="https://github.com/user-attachments/assets/d6dc80f9-07fa-4389-948a-e64a4171eff1" />
 
-### Construct Model
+### model achiteture
 
-My model achiteture: 
+Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face because an uncased model **simplifies the vocabulary** and **pre-training benefits**.
 
 ![image](https://github.com/user-attachments/assets/7abebb30-cb60-433a-8899-8d8164d1047a)
-
-(1) Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face for the following reasons:
-
-- Case-Insensitivity:  Since SemEval 2014 Task 1 focuses on semantic similarity, case differences are unnecessary, and an uncased model simplifies the vocabulary.
-
-- Pre-training Benefits: The model is trained on a large English corpus, saving computation and training time.
-
-- Versatility: BERT excels in NLP tasks like classification and entailment prediction, making it ideal for this task.
-
-- Generalization: The uncased version reduces vocabulary size and improves performance on tasks not reliant on capitalization.
 
 
 (2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
