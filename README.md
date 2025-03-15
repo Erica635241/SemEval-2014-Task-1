@@ -59,19 +59,19 @@ Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face bec
 
 - Model Consistency: MTL maintains overall model consistency and prevents excessive focus on a single task, improving performance across tasks.
 
-(3) Aggregation of the losses from two sub-tasks: 
+For the loss functions, I use different loss functions for different types of tasks and aggregation of those two losses: 
 
-- Mean Squared Error Loss (MSE Loss): Measures the average squared difference between predicted and true numeric values, useful for regression tasks. It’s computed as 
+- Mean Squared Error Loss (MSE Loss): Measures the average squared difference between predicted and true relatedness_score for regression tasks. It’s computed as 
 ```python
 self.mse_loss(pred_numeric, true_numeric).
 ```
 
-- Cross-Entropy Loss (CE Loss): Quantifies the difference between predicted probabilities and actual classes, commonly used for classification tasks. It’s calculated with
+- Cross-Entropy Loss (CE Loss): Quantifies the difference between predicted and actual entailment_judgement for classification tasks. It’s calculated with
 ```python
 self.ce_loss(pred_category, true_category).
 ```
 
-- Both losses are combined into a total loss using:
+- Both losses are combined into a total loss using: 
 ```python
 total_loss = alpha * loss_numeric + (1 - alpha) * loss_category
 ```
