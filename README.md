@@ -1,5 +1,5 @@
 # SemEval-2014-Task-1
-In this project, I will focus on building a model for multi-output learning using the SemEval 2014 Task 1 dataset. This dataset contains text samples, each associated with multiple labels, reflecting complex relationships inherent in real-world data. Given two text fragments, the goal is to assign a similarity score that reflects their meaning closeness, which is useful in applications such as machine translation, information retrieval, and text summarization.
+In this project, I will focus on building a model for multi-output learning using the SemEval 2014 Task 1 dataset. Given two text sentences, the goal is to assign a similarity score that reflects their meaning closeness and entailment categorical.
 
 This project will provide valuable insights into how machine learning can effectively deal with multi-label classification challenges.
 
@@ -29,7 +29,9 @@ Dataset describtion:
         
     - entailment_judgement: A categorical label that classifies the relationship between the premise and the hypothesis. (including 3: Contradiction, 2: Entailment, 0: Neutral)
 
-![image](https://github.com/user-attachments/assets/07d226d2-99ab-4874-a3fb-b7a1ef38c0f4)
+| sentence A  | sentence B | relatedness_score | entailment_judgement
+| --------------------------------------| ------------------------------------- |
+| A group of kids is playing in a yard  | A group of boys in a yard is playing  | 4.5 |NEUTRAL|
 
 ### Data Explore
 This dataset distribution table shows the class breakdown for the SICK (Sentences Involving Compositional Knowledge) dataset, which is used for semantic relatedness and textual entailment tasks. It consists of a training set (4,934 samples) and a test set (4,906 samples).
