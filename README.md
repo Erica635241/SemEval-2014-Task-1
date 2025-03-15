@@ -46,7 +46,7 @@ This dataset distribution table shows the class breakdown for the SICK (Sentence
 
 ### model achiteture
 
-Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face because an uncased model **simplifies the vocabulary** and **pre-training benefits**.
+Pre-trained Model Selection: I chose **bert-base-uncased** from Hugging Face because of (1)**simplified vocabularies**, (2)**pre-training benefits**.
 
 ![image](https://github.com/user-attachments/assets/7abebb30-cb60-433a-8899-8d8164d1047a)
 
