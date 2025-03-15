@@ -29,9 +29,9 @@ Dataset describtion:
         
     - entailment_judgement: A categorical label that classifies the relationship between the premise and the hypothesis. (including 3: Contradiction, 2: Entailment, 0: Neutral)
 
-| sentence A  | sentence B | relatedness_score | entailment_judgement
-| --------------------------------------| ------------------------------------- |
-| A group of kids is playing in a yard  | A group of boys in a yard is playing  | 4.5 |NEUTRAL|
+| sentence A                            | sentence B                            | relatedness_score | entailment_judgement|
+| --------------------------------------| ------------------------------------- |-------------------|---------------------|
+| A group of kids is playing in a yard  | A group of boys in a yard is playing  |       4.5         |       NEUTRAL       |
 
 ### Data Explore
 This dataset distribution table shows the class breakdown for the SICK (Sentences Involving Compositional Knowledge) dataset, which is used for semantic relatedness and textual entailment tasks. It consists of a training set (4,934 samples) and a test set (4,906 samples).
