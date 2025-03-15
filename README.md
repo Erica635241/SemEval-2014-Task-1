@@ -78,11 +78,12 @@ The output you've provided includes some evaluation metrics commonly used to ass
 |accuracy|0.95|0.86|
 |F1 score|0.94|0.85|
 
-### Further Work
+### Further Improvements
+
 
 ## Appendix
 
-(2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
+Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
 
 - Shared Knowledge: MTL enables a single model to learn multiple related tasks, capturing common features and improving efficiency, especially with limited data.
 
