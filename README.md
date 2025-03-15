@@ -14,16 +14,9 @@ This challenge involves two sub-tasks:
 
 Dataset describtion: 
 
-- Train split: 4500 pieces
-
-- Validation split: 500 pieces
-
-- Test split: 4927 pieces
+- Train split: 4500 pieces; Validation split: 500 pieces; Test split: 4927 pieces
 
 - Each data piece: 
-    - premise
-
-    - hypothesis
         
     - relatedness_score: A numerical score (e.g., from 0 to 5) that indicates the semantic similarity between the premise and the hypothesis.
         
