@@ -78,7 +78,9 @@ The output you've provided includes some evaluation metrics commonly used to ass
 |accuracy|0.95|0.86|
 |F1 score|0.94|0.85|
 
-### Appendix
+### Further Work
+
+## Appendix
 
 (2) Multi-Output Learning: I find that multi-output learning improves the performance. Comparing separately trained models with a multi-task learning (MTL) approach, we find MTL performs slightly better. Possible reasons:
 
